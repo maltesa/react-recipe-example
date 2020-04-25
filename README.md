@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Data
+The example works with the data from this repository:
+https://github.com/LeaVerou/forkgasm/blob/master/recipes.json
+Put it into `src/data/recipes.json` or create your own.
+
+You can find the actual recipes on this site: https://forkgasm.com/
+They look tasty :)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
