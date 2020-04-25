@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+
+html {
+  @apply font-body;
+}
+
+body {
+  @apply bg-gray-100;
+}
+
+h1 {
+  @apply text-4xl font-bold mb-3 font-display;
+}
+
+header > h1 {
+  @apply text-6xl;
+}
+
+header > h3 {
+  @apply float-right text-gray-600 -mt-10;
+}
+
+h2 {
+  @apply text-2xl font-bold mb-2 font-display;
+}
+
+h3 {
+  @apply text-xl font-bold mb-2 font-display;
+}
+
+ul {
+  @apply text-lg list-disc ml-5 italic mb-3;
+}
+
+p {
+  @apply text-lg mb-3;
+}
+
+section {
+  @apply mb-6;
+}
+
+.app {
+  @apply mx-auto my-8 p-4;
+}
+
+.card {
+  @apply bg-white transition-shadow duration-500 shadow-md rounded-lg overflow-hidden flex flex-col h-auto;
+}
+
+.card > figure {
+  @apply w-full overflow-hidden;
+  height: 250px;
+}
+
+.card > figure > img {
+  @apply w-full;
+}
+
+.card > main {
+  @apply p-8;
+}
+
+.card > footer {
+  @apply px-4 pb-6 mt-auto;
+}
+
+.card:hover {
+  @apply shadow-xl;
+}
+
+.flex-container {
+  @apply flex flex-wrap -mx-4 overflow-hidden;
+}
+
+.flex-item {
+  @apply my-4 px-4 w-full flex;
+}
+
+@screen lg {
+  .flex-item {
+    @apply w-1/2;
+  }
+}
+
+@screen xl {
+  .flex-item {
+    @apply w-1/3;
+  }
+}
+
+.search-bar {
+  @apply w-full;
+}
+
+.search-bar > input {
+  @apply w-full mr-3 transition-shadow duration-500 rounded-lg px-6 py-4 text-xl shadow outline-none text-gray-600;
+}
+
+.search-bar > input:focus {
+  @apply shadow-xl;
+}
+
+.tag {
+  @apply rounded-full bg-gray-200 py-2 px-4 text-sm text-gray-700 font-bold mr-2;
+}
